@@ -1,4 +1,3 @@
-# IMPORT ALL THE REQUIRED LIBRARIES
 from bs4 import BeautifulSoup as bs
 import requests as req
 
