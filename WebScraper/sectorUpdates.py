@@ -1,0 +1,21 @@
+# IMPORT ALL THE REQUIRED LIBRARIES
+from bs4 import BeautifulSoup as bs
+import requests as req
+
+
+url = "https://site.financialmodelingprep.com/financial-summary/AAPL"
+
+webpage = req.get(url)
+trav = bs(webpage.content, "html.parser")
+M = 1
+for link in trav.find_all('a'):
+
+	# PASTE THE CLASS TYPE THAT WE GET
+	# FROM THE ABOVE CODE IN THIS AND
+	# SET THE LIMIT GREATER THAN 35
+	if(str(type(link.string)) == "<class 'bs4.element.NavigableString'>"
+	and len(link.string) > 35):
+
+		print(str(M)+".", link.string)
+		M += 1
+print(":asd")
