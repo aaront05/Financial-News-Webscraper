@@ -23,7 +23,7 @@ df = pd.DataFrame()
 for url in sectors:
 	print("\n" + str(url) + "\n")
 	temp = pd.DataFrame({url:scrape(url)})
-	df = pd.concat([df, temp], ignore_index=False, axis=1)
+	df = pd.concat([df, temp], ignore_index=False)
 	for h in scrape(url):
 		print(h)
 
