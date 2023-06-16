@@ -43,9 +43,9 @@ for url in sectors:
 
 # print(df)
 
-# # export the dataframe to an Excel sheet
-# with pd.ExcelWriter('/Users/aarontsui/Desktop/ORBS/sectorUpdates.xlsx', engine='openpyxl', mode='w') as writer:
-#     df.to_excel(writer, sheet_name='Sheet1', index=False)
+# export the dataframe to an Excel sheet
+with pd.ExcelWriter('/Users/aarontsui/Desktop/ORBS/sectorUpdates.xlsx', engine='openpyxl', mode='w') as writer:
+    df.to_excel(writer, sheet_name='Sheet1', index=False)
 
 
 # Sentiment Analysis
