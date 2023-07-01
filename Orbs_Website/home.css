@@ -1,70 +1,90 @@
 body {
     font-family: serif, Garamond;
-    margin: 0;
     background-color: rgba(0, 149, 255, 0.256);
-    background: url(background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(background4.jpeg) center fixed ;
     background-size: cover;
-  }
-  
-  h1.title {
-    text-align: center;
-    color: rgb(3, 27, 68);
-    padding-bottom: 50px;
-    font-size: 60px;
-  }
-  
-  a {
-    color: rgb(3, 130, 147);
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  p {
-    text-align: center;
-    color: #777;
-    line-height: 1.4;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    display: flex;
     justify-content: center;
-    margin-right: 75px;
-  }
+    align-items: center;
+    min-width: 960px;
 
-  .clickable-h2 {
-    cursor: pointer;
-    margin: 0 150px;
   }
+  
+h1.title {
+  text-align: center;
+  color: rgb(3, 27, 68);
+  font-size: 60px;
+}
 
+a {
+  color: rgb(3, 130, 147);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  color: #777;
+  line-height: 1.4;
+  padding-bottom: 80px;
+}
+
+.clickable-h2 {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px
+}
+
+.main {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+}
+
+.main::-webkit-scrollbar {
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 1000px;
+}
+
+.clickable-h2 {
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
   .logo {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    height: 100px;
+    display: none;
   }
+}
 
-  @media (max-width: 600px) {
-    .logo {
-      display: none;
-    }
-    .linkedin {
-      display: none;
-    }
-  }
-
+@media (max-width: 800px) {
   .linkedin {
-    position: absolute;
-    top: 54px;
-    right: 30px;
-    height: 40px;
+    display: none;
   }
+}
+
+.linkedin {
+  position: absolute;
+  top: 54px;
+  right: 30px;
+  height: 40px;
+}
 
   
