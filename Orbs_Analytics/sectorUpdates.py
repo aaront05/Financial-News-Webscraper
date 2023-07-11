@@ -48,7 +48,3 @@ with pd.ExcelWriter('/Users/aarontsui/Desktop/ORBS/sectorUpdates.xlsx', engine='
     df.to_excel(writer, sheet_name='Sheet1', index=False)
 
 
-# Sentiment Analysis
-sen = SentimentIntensityAnalyzer()
-print(df['https://www.cnbc.com/technology/'][2])
-print(sen.polarity_scores("Microsoft stock hits record as leaders see $10 billion in annual A.I. revenue. Disney finance chief Christine McCarthy to step down as Iger reshapes company. Russian ransomware hacker accused of extorting millions from U.S. businesses. Tesla's U.S. electric vehicle market share to drop to 18% by 2026: BofA estimate. U.S. withdraws new charges in Sam Bankman-Fried case, punts them to 2024. Bitcoin briefly drops below $25,000, Tether's stablecoin falls under dollar peg. $5 billion fintech Zepz plans M&A, new digital wallet despite job cuts. Oracle hits record after 50% surge in 2023, defying tech struggles. Shell CEO says EV charging stations in China are hot, sees 'robust' oil demand. CalPERS to boost venture capital investments despite startup market turmoil. EU charges Google with anti-competitive practices in ad tech business. Nvidia-backed firm that turns text into A.I. avatars hits $1 billion valuation."))
